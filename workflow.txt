@@ -1,0 +1,16 @@
+step 1: establish the connection between server(my pc) and site(VMware). Execute 'conn.sql' from "connection(server)" frolder in server. 
+Also execute 'conn.sql' from "Site Part File (site)" folder in site.
+
+step 2: Run all the file from "All Database(server)" in server. 
+Also run the Database table in site from "Site Part File (site) -> project -> site(site) -> countryTable2.sql".
+
+step 3: Start play from server side. Go to "All SQLFILE (server)" folder. 1st run "selectTeam.sql" to select your and opponent team.
+Then run "toss.sql" to toss. If you win the toss then you decide to bat or ball. Otherwise, Opponent will decide to bat or ball.
+
+step 4: Now, If you decide to bat first then run "functionBatting.sql". After finishing your batting run "opponent Bat.sql" to start opponent batting.
+Also, if opponent decide to bat first then run "opponent Bat.sql" to start opponent batting. After finishing Opponent's batting run "functionBatting.sql" to start your batting.
+
+step 5: Now, Run "YourLastPerformanceHistory.sql" to check your recent performance history.
+Also, Run "Team_Perfomance_Stat_view.sql" to see all the teams statistics.
+
+step 6(site):Now start the game form site. Go to ""Site Part File (site) -> project -> server(site)" then execute those file by following step 3 ,step 4 and step 5 in site.
